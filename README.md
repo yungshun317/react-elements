@@ -31,10 +31,10 @@ And the rendered HTML code looks like:
 ```
 
 And the console log shows what `React.createElement` actually creates:
-```json
+```
 {
     $$typeof: Symbol(react.element),
-    "type": "ul"
+    "type": "ul",
     "key": null,
     "ref": null.
     "props": {
@@ -47,16 +47,16 @@ And the console log shows what `React.createElement` actually creates:
             { "type": "li", "props": { "children": "3 cloves of Garlic" } ... }
         ]
     },
-    "_owner: null,
+    "_owner": null,
     "_store": { validated: false }
 }
 ```
 
 ## React Elements
 
-The virtual DOM is made up of React elements, which conceptually seem similar to HTML elements, but are actually JavaScript objects. It's much faster to work directly with JavaScript objects than it is to work with the DOM API. We make changes to a JavaScript object, the virtual DOM, and React renders those changes for us using the DOM API as efficiently as possible.
+The **virtual DOM** is made up of React elements, which conceptually seem similar to HTML elements, but are actually JavaScript objects. It's much faster to work directly with JavaScript objects than it is to work with the DOM API. We make changes to a JavaScript object, the virtual DOM, and React renders those changes for us using the DOM API as efficiently as possible.
 
-A React element is a description of what the actual DOM element should look like. In other words, React elements are the instructions for how the browser DOM should be created.
+A **React element** is a description of what the actual DOM element should look like. In other words, React elements are the instructions for how the browser DOM should be created.
 
 The major advantage of using React is its ability to separate data from UI elements.
 
